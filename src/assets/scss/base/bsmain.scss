@@ -73,8 +73,8 @@ label {
     max-width: calc(var(--container-width) + (var(--container-padding) * 2));
 }
 
-// .hidden {
-//     font-size: 0;
-//     opacity: 0;
-//     visibility: hidden;
-// }
+.hidden {
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+}
