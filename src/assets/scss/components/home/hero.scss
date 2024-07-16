@@ -1,0 +1,63 @@
+.hero {
+    padding-top: 201px;
+
+    &__container {
+        @include flex-all-between;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            display: inline-block;
+            border-radius: 100%;
+            width: 500px;
+            height: 500px;
+            background: #fa7515;
+            opacity: 0.25;
+            filter: blur(220px);
+        }
+    }
+
+    &__left {
+        max-width: 599px;
+    }
+
+    &__title {
+        margin-bottom: 114px;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+    }
+
+    &__subtitle {
+        margin-bottom: 69px;
+    }
+
+    &__form {
+        @include flex-align-center;
+        gap: 16px;
+    }
+
+    &__input {
+        border-bottom: 1px solid var(--neutral-color-40);
+        padding-bottom: 23px;
+        width: 280px;
+        height: 47px;
+        min-width: 280px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+        background-color: var(--neutral-color-10);
+    }
+
+    &__btn {
+        padding: 16px 44px;
+        color: var(--neutral-color-10);
+        background-color: var(--neutral-color-100);
+    }
+}
