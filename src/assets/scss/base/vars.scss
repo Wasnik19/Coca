@@ -16,14 +16,28 @@
     // primary colors
     --primary-color-50: #4e7ddb;
 
+    // succes color
+    --succes-color-70: #e2f8f0b3;
+
     // container
     --container-padding: 15px;
     --container-width: 1200px;
+
+    @include mobile {
+        --container-padding: 15px;
+        --container-width: 480px;
+    }
+
+    // @include small-mobile {
+    //     --container-padding: 15px;
+    //     --container-width: 300px;
+    // }
 
     // transition
     --transition: 0.2s ease-in-out;
 
     // z - index
+    --z-index-0: 0;
     --z-index-1: 1;
     --z-index-2: 2;
     --z-index-3: 3;
@@ -38,4 +52,7 @@
     // logo color
     --color-text: #fff;
     --color-circle: #343542;
+
+    // succes color
+    --succes-color-70: #e2f8f033;
 }

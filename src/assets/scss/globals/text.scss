@@ -100,7 +100,7 @@
             }
 
             @include small-mobile {
-                font-size: 20px;
+                font-size: 14px;
             }
 
             &::before {
@@ -112,9 +112,9 @@
                 background-color: var(--neutral-color-100);
                 transform: translateY(-43px);
 
-                // @include mini-desktop {
-                //     display: none;
-                // }
+                @include small-tablet {
+                    display: none;
+                }
             }
         }
 

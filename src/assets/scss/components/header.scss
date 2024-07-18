@@ -1,10 +1,6 @@
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: var(--z-index-3);
     padding: 26px 0 22px;
+    background-color: transparent;
 
     &__container {
         @include flex-all-between;
@@ -98,6 +94,11 @@
             text-align: center;
             color: var(--neutral-color-140);
             transform: translate(-50%);
+
+            @include small-tablet {
+                top: -38px;
+                font-size: 25px;
+            }
         }
 
         &-checkbox {
@@ -133,6 +134,17 @@
         color: var(--neutral-color-100);
 
         @include small-tablet {
+            font-size: 25px;
+            line-height: 200%;
+        }
+
+        @include mobile {
+            font-size: 25px;
+            line-height: 200%;
+        }
+
+        @include small-mobile {
+            font-size: 25px;
             line-height: 200%;
         }
 
