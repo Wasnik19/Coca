@@ -8,6 +8,7 @@
     --neutral-color-120: #828282;
     --neutral-color-130: #d9d9d9;
     --neutral-color-140: #000;
+    --neutral-color-150: #7e8492;
 
     // logo color
     --color-text: #101010;
@@ -16,12 +17,25 @@
     // primary colors
     --primary-color-50: #4e7ddb;
 
+    // overview colors
+    --overwiew-bd-color: #1d1e25;
+
     // succes color
     --succes-color-70: #e2f8f0b3;
 
     // container
     --container-padding: 15px;
     --container-width: 1200px;
+
+    @include mini-desktop {
+        --container-padding: 15px;
+        --container-width: 1000px;
+    }
+
+    @include tablet {
+        --container-padding: 15px;
+        --container-width: 860px;
+    }
 
     @include mobile {
         --container-padding: 15px;
@@ -55,4 +69,7 @@
 
     // succes color
     --succes-color-70: #e2f8f033;
+
+    // overview colors
+    --overwiew-bd-color: #18181d;
 }

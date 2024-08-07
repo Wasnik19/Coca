@@ -2,6 +2,10 @@
     position: relative;
     padding: 87px 0 141px;
 
+    @include mobile {
+        min-height: calc(100dvh - 109px);
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -36,7 +40,7 @@
             left: 82px;
             width: 200px;
             height: 200px;
-            opacity: 0.7;
+            opacity: 0.6;
         }
     }
 
@@ -65,7 +69,7 @@
             top: 82px;
             left: 82px;
             width: 250px;
-            height: 250px;
+            height: 2 50px;
             opacity: 0.7;
         }
     }
@@ -74,7 +78,7 @@
         @include flex-justify-between;
         gap: 15px;
         flex-wrap: wrap;
-        align-items: flex-end;
+        align-items: center;
 
         @include mini-desktop {
             gap: 250px;
