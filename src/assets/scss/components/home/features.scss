@@ -102,7 +102,7 @@
             &-text {
                 font-weight: 400;
                 font-size: 8px;
-                color: #7e8492;
+                color: var(--neutral-color-150);
             }
         }
     }
@@ -128,7 +128,7 @@
         max-width: 360px;
         font-weight: 500;
         line-height: 178%;
-        color: #7e8492;
+        color: var(--neutral-color-150);
     }
 
     &__item {
