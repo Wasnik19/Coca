@@ -39,12 +39,8 @@
         gap: 10px 30px;
         flex-wrap: wrap;
 
-        @include tablet {
-            grid-template-columns: repeat(2, 4fr);
-        }
-
         @include mobile {
-            gap: 10px;
+            display: none;
         }
     }
 
@@ -54,5 +50,38 @@
         width: 160px;
         height: 90px;
         background: #fff;
+    }
+
+    &__slider-wrapper {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__slider {
+        @include mobile {
+            max-width: 500px;
+        }
+
+        @include small-mobile {
+            max-width: 340px;
+        }
+    }
+
+    &__slide-item {
+        @include mobile {
+            @include flex-column-all-center;
+            border-radius: 16px;
+            width: 160px;
+            height: 90px;
+            background: #fff;
+        }
+
+        @include small-mobile {
+            width: 110px;
+            height: 70px;
+        }
     }
 }

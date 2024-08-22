@@ -3,7 +3,6 @@ export const useBurger = () => {
     const burgerMenu = document.querySelector('[data-burger="menu"]');
     const overlay = document.querySelector('[data-burger="overlay"]');
     const body = document.body;
-
     const closeBurgerMenu = () => {
         burgerBtn.classList.remove('burger--active');
         burgerMenu.classList.remove('header__right--visible');
