@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 export const useInsightSlider = () => {
@@ -26,6 +26,20 @@ export const useTestimonialsSlider = () => {
         navigation: {
             nextEl: '.testimonials__btn--next',
             prevEl: '.testimonials__btn--prev',
+        },
+    });
+};
+
+export const usePartnersMobileSlider = () => {
+    new Swiper('.partners__slider', {
+        slidesPerView: '3',
+        spaceBetween: 5,
+        loop: true,
+        centeredSlides: true,
+        modules: [Autoplay],
+
+        autoplay: {
+            delay: 1000,
         },
     });
 };

@@ -46,7 +46,7 @@
         &-arrow {
             @include flex-all-center;
             position: absolute;
-            right: 50%;
+            right: 49%;
             bottom: 50%;
             z-index: var(--z-index-2);
             border-radius: 50%;
