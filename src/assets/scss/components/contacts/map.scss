@@ -1,0 +1,118 @@
+.map {
+    &__title {
+        margin-bottom: 82px;
+        padding-top: 90px;
+        padding-bottom: 85px;
+        max-width: 741px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+
+        @include tablet {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include mobile {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+    }
+
+    &__mapyandex {
+        @include flex-all-between;
+        gap: 83px;
+        margin-bottom: 85px;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__world {
+        height: 100%;
+        max-width: 987px;
+
+        @include tablet {
+            max-width: 800px;
+        }
+
+        @include small-tablet {
+            max-width: 700px;
+        }
+
+        @include mobile {
+            max-width: 380px;
+        }
+
+        @include small-mobile {
+            max-width: 300px;
+        }
+    }
+
+    &__contacts {
+        padding-right: 30px;
+        max-width: 176px;
+
+        @include tablet {
+            @include flex-all-center;
+            gap: 40px;
+            padding-right: 0;
+            max-width: 100%;
+        }
+
+        @include small-tablet {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @include mobile {
+            gap: 20px;
+        }
+
+        &-item {
+            border-bottom: 1px solid #afb3bb;
+            padding-bottom: 14px;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+
+                @include tablet {
+                    margin-bottom: 0;
+                }
+            }
+
+            @include small-tablet {
+                width: 100%;
+            }
+        }
+
+        &-title {
+            margin-bottom: 8px;
+            font-weight: 700;
+            line-height: 133%;
+            color: var(--neutral-color-100);
+        }
+
+        &-text {
+            margin-bottom: 20px;
+            font-weight: 400;
+            line-height: 150%;
+            color: var(--neutral-color-150);
+        }
+
+        &-email {
+            display: inline-block;
+            margin-bottom: 14px;
+            font-weight: 500;
+            line-height: 162%;
+            color: var(--neutral-color-100);
+        }
+    }
+}
