@@ -1,0 +1,114 @@
+.get-started {
+    padding-top: 120px;
+    padding-bottom: 160px;
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0;
+        max-width: 1440px;
+    }
+
+    &__form {
+        &-wrapper {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            border: 1px solid var(--neutral-color-40);
+            padding: 56px 48px;
+            max-width: 608px;
+            background-color: #fff;
+        }
+
+        &-title {
+            margin-bottom: 20px;
+            font-weight: 600;
+            line-height: 122%;
+            letter-spacing: -0.02em;
+            color: #1d1e25;
+        }
+
+        &-text {
+            margin-bottom: 48px;
+            font-weight: 400;
+            line-height: 167%;
+            color: var(--neutral-color-150);
+        }
+
+        &-email {
+            font-weight: 500;
+            color: var(--primary-color-30);
+        }
+
+        &-top {
+            @include flex-all-between;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        &-label {
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            color: #1d1e25;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 6px;
+            }
+
+            &-textarea {
+                display: inline-block;
+                margin-bottom: 6px;
+                font-weight: 500;
+                line-height: 143%;
+                color: #1d1e25;
+            }
+
+            &-text-area {
+                margin-bottom: 32px;
+                border: 1px solid #ededed;
+                border-radius: 8px;
+                padding: 10px 14px;
+                width: 100%;
+                height: 134px;
+                color: #000;
+            }
+        }
+
+        &-input {
+            display: inline-block;
+            margin-top: 6px;
+            border: 1px solid var(--neutral-color-30);
+            border-radius: 8px;
+            padding: 10px 14px;
+            width: 100%;
+
+            &--email {
+                margin-bottom: 24px;
+            }
+        }
+
+        &-btn {
+            border-radius: 100px;
+            padding: 16px 32px;
+            width: 167px;
+            color: #fff;
+            background-color: #1d1e25;
+            transition: all 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.iti {
+    position: relative;
+    display: block !important ;
+    margin-bottom: 24px;
+}
