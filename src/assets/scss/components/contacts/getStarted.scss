@@ -2,15 +2,38 @@
     padding-top: 120px;
     padding-bottom: 160px;
 
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
     &__container {
         position: relative;
         display: flex;
         justify-content: flex-end;
         padding-right: 0;
         max-width: 1440px;
+
+        @include tablet {
+            padding-right: var(--container-padding);
+        }
+
+        @include small-tablet {
+            @include flex-all-center;
+        }
+    }
+
+    &__img {
+        @include small-tablet {
+            display: none;
+        }
     }
 
     &__form {
+        @include mobile {
+            @include flex-column-all-center;
+        }
+
         &-wrapper {
             position: absolute;
             top: 0;
@@ -19,6 +42,25 @@
             padding: 56px 48px;
             max-width: 608px;
             background-color: #fff;
+
+            @include tablet {
+                left: var(--container-padding);
+            }
+
+            @include small-tablet {
+                position: inherit;
+                padding: 36px 28px;
+                min-width: 300px;
+                max-width: 500px;
+            }
+
+            @include mobile {
+                max-width: 380px;
+            }
+
+            @include small-mobile {
+                margin-right: 30px;
+            }
         }
 
         &-title {
@@ -45,10 +87,17 @@
             @include flex-all-between;
             gap: 32px;
             margin-bottom: 24px;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
         }
 
         &-label {
             margin-bottom: 6px;
+            width: 100%;
             font-weight: 500;
             font-size: 14px;
             line-height: 143%;
@@ -70,12 +119,14 @@
 
             &-text-area {
                 margin-bottom: 32px;
+                outline: none;
                 border: 1px solid #ededed;
                 border-radius: 8px;
                 padding: 10px 14px;
                 width: 100%;
                 height: 134px;
                 color: #000;
+                resize: none;
             }
         }
 
@@ -85,10 +136,23 @@
             border: 1px solid var(--neutral-color-30);
             border-radius: 8px;
             padding: 10px 14px;
-            width: 100%;
+            width: 240px;
+
+            @include small-tablet {
+                width: 200px;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
 
             &--email {
                 margin-bottom: 24px;
+                width: 100%;
+            }
+
+            &--tel {
+                width: 100%;
             }
         }
 
@@ -109,6 +173,6 @@
 
 .iti {
     position: relative;
-    display: block !important ;
+    display: block !important;
     margin-bottom: 24px;
 }
