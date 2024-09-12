@@ -5,6 +5,7 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
     root: './src',
+    base: '/coca/',
     server: {
         port: 3000,
         open: true,
@@ -13,6 +14,7 @@ export default defineConfig({
         port: 8080,
         open: true,
     },
+    publicDir: './src/assets',
     build: {
         outDir: '../dist',
         emptyOutDir: true,

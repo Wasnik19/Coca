@@ -1,4 +1,4 @@
-import '../assets/scss/contacts.scss';
+import '/scss/contacts.scss';
 
 // components
 import { useTheme } from './components/theme.js';
